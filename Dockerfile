@@ -19,6 +19,6 @@ RUN ["mvn", "verify"]
 ADD src /code/src
 RUN ["mvn", "package"]
 
-EXPOSE 4567
+EXPOSE 8008
 # CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-jar", "target/sparkexample-jar-with-dependencies.jar"]
 CMD ["java", "-jar", "target\spark-basic-structure-1.0-SNAPSHOT-jar-with-dependencies.jar"]

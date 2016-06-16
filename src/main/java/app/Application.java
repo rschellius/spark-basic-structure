@@ -21,7 +21,7 @@ public class Application {
         userDao = new UserDao();
 
         // Configure Spark
-        port(4567);
+        port(8008);
         staticFiles.location("/public");
         staticFiles.expireTime(600L);
         enableDebugScreen();
